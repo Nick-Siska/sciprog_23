@@ -11,15 +11,15 @@ int main() {
   double xi = 0.0;
   double log2_result = log(2.0);
   // Creating a for loop that will calculate the 2*tan(xi) and save it in sum
-  for(int i = 0;i<= N;i++){
-    xi = a +i*(b-a)/N;
+  for(int i = 1;i< N;i++){
+    xi = a +i*(b-a)/(double)N;
     sum = sum + 2.0*tan(xi);
     //printf("xi is equalt to:  %.2f\n", xi);
     //printf("Sum is equalt to:  %.2f\n",sum);
   }
   // Adding the tan of the endpoints plus the previously calculated sum.
   // This is multipled what is specified in the formula
-  result = (tan(a) + tan(b) +sum)*(b - a)/(2.0*N);
+  result = (tan(a) + tan(b) +sum)*(b - a)/(2.0*(double)N);
   printf("End Result:  %.4f\n", result);
   printf(" Log2 Result: %.4f \n",log2_result);
 
