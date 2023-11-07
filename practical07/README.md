@@ -2,4 +2,5 @@
 gcc -o e e_x.c -lm
 ./e
 
-// The file is called e_x.c
+gcc -o al allocate.c -lm
+./al
