@@ -1,0 +1,3 @@
+ç// This is for practical04
+gcc -o myprogram degrees_radians_conversion.c -lm
+./myprogram
